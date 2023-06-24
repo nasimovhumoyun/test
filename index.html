@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <p>Sign up</p>
+        </div>
+        <div class="right-side">
+                <h3 class="title">New user?</h3>
+                <p class="subtitle">
+                    Use the form below to create your account.
+                </p>
+                <br>
+                <form action="" id="form">
+                    <div class="first-field">
+                        <div class="input-field">
+                            <label for="">First Name</label>
+                            <input type="text" id="name" >
+                            <div class="error"></div>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label for="">Last Name</label>
+                            <input type="text" id="surname" >
+                            <div class="error"></div>
+                        </div>
+                        
+                    </div>
+<br>
+                    <div class="second-field">
+                        <div class="input-field">
+                            <label for="">Nationality</label>
+                            <input type="text" id="nation" >
+                            <div class="error"></div>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label for="">E-mail</label>
+                            <input id="email" type="text">
+                            <div class="error"></div>
+                        </div>
+                    </div>
+<br>
+                    <div class="third-field">
+                        <div class="input-field add">
+                            <label for="#">Date of Birth</label>
+                            <input type="date" required>
+                            <div class="error"></div>
+                        </div>
+                        
+                        <div class="input-field add">
+                            <label for="">Gender</label>
+                            <div class="gen">
+                                <input type="radio"  name="gender" value="Male" required>
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" value="Female" required>
+                                <label for="female">Female</label>
+                            </div>
+                           
+                        </div>
+                    </div>
+<br>
+                    <div class="fourth-field">
+                        <input type="password" placeholder="Password" id="password" required>
+                        <div class="error"></div>
+                        <input type="password" placeholder="Confirm Password" id="confirm_password" required >
+                        <div class="error"></div>
+                       
+                        
+                    </div>
+                   
+                    <div class="bottom">
+                        <p>Have you an accaunt? <a href="login.html">Login</a></p>
+                
+                        <button type="submit" class="button">Confirm</button>
+                    </div>
+                </form>
+                
+        </div>
+    </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

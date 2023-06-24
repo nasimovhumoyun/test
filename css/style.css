@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Sans;
+    src: url(../Sans/PTSans-Regular.ttf);
+}
+body{
+    font-family: Sans;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 1200px;
+    height:90vh;
+    display: flex;
+    box-shadow: -4px 6px 11px 3px rgba(34, 60, 80, 0.17);
+}
+/* Left side  */
+.left-side{
+    width: 110px;
+    background-color: #5A61ED;
+    color: #fff;
+    border-radius: 8px 0px 0px 8px;
+  
+    position: relative;
+}
+.left-side p{
+    font-size: 30px;
+    bottom: 50px;
+    right: -10px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+/* =====================Right Side============= */
+.right-side{
+    padding: 20px;
+    width: 500px;
+
+
+}
+
+.first-field, .second-field, .third-field, .fourth-field{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field.success input{
+    border-color: #09c372;
+}
+.input-field.error input{
+    border-color: #ff3860;
+}
+.input-field .error {
+    color: #ff3860;
+}
+
+.add{
+    gap: 5px;
+}
+.gen{
+    width: 170px;
+}
+label{
+    opacity: 65%;
+}
+input{
+    padding-top: 2px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(176, 176, 176);
+    outline: none;
+}
+
+/* Have you an accaunt */
+.bottom{
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    width: 140px;
+    height: 42px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #5A61ED;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Thamk you window */
+.content{
+    padding-top: 200px;
+}
+
+
+
+/* Login  window*/
+
+
+.login{
+    max-width: 600px;
+    height: 300px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#mail, #pass{
+    padding: 8px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+}
+::placeholder{
+    opacity: 75%;
+}
+.btn{
+    background-color: #5A61ED;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+
+/* ==============RESPONSIVE=============== */
+
+
+@media screen and (max-width:700px) {
+    .container{
+        max-width: 680px;
+
+    }
+
+    .first-field, .second-field, .third-field, .fourth-field{
+        display: flex;
+        align-items: center;
+    }
+    .input-field{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:340px) {
+    .container{
+        max-width: 330px;
+        height: 100%;
+
+    }
+
+    .first-field, .second-field, .third-field, .fourth-field{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .input-field{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        width: 200px;
+    }
+    .left-side p{
+        font-size: 20px;
+        bottom: 50px;
+        right: -10px;
+        position: absolute;
+        transform: rotate(-90deg);
+    }
+}
